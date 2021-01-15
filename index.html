@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home page</title>
+    <link href="styles.css"  rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="both-links">
+          <div class="individual-link active-nav-link">
+            <a href="index.html">HOME</a>
+          </div>  
+          <div class="individual-link">
+            <a href="About.html">ABOUT</a>
+          </div>
+
+        </div>
+        <div class="name-val">
+          <div class="name-text">
+            SOLOMON ADACHE
+          </div>  
+        </div>
+      </div>
+      <div class="all-content">
+        <div class="portifolio-items-wrapper">
+
+          <div class="portifolio-item-wrapper">
+            <div class="portifolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                <p>My very first project,really enjoyed working on this project</p>
+              </div>
+            </div>
+          </div>
+          <div class="portifolio-item-wrapper">
+            <div class="portifolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                <p>My very first project,really enjoyed working on this project</p>
+              </div>
+            </div>
+          </div>
+          <div class="portifolio-item-wrapper">
+            <div class="portifolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                <p>My very first project,really enjoyed working on this project</p>
+              </div>
+            </div>
+          </div><div class="portifolio-item-wrapper">
+            <div class="portifolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                <p>My very first project,really enjoyed working on this project</p>
+              </div>
+            </div>
+          </div>
+          <div class="portifolio-item-wrapper">
+            <div class="portifolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                <p>My very first project,really enjoyed working on this project</p>
+              </div>
+            </div>
+          </div>
+          <div class="portifolio-item-wrapper">
+            <div class="portifolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                <p>My very first project,really enjoyed working on this project</p>
+              </div>
+            </div>
+          </div>
+          <div class="portifolio-item-wrapper">
+            <div class="portifolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                <p>My very first project,really enjoyed working on this project</p>
+              </div>
+            </div>
+          </div>
+          <div class="portifolio-item-wrapper">
+            <div class="portifolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                <p>My very first project,really enjoyed working on this project</p>
+              </div>
+            </div>
+          </div>
+          <div class="portifolio-item-wrapper">
+            <div class="portifolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">
+                <p>My very first project,really enjoyed working on this project</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const portifolioItems = document.querySelectorAll(".portifolio-item-wrapper");
+    portifolioItems.forEach(portifolioItem =>{
+      portifolioItem.addEventListener("mouseover", ()=>{
+        portifolioItem.childNodes[1].classList.add("img-darken");
+      })
+      portifolioItem.addEventListener("mouseout", ()=>{
+        portifolioItem.childNodes[1].classList.remove("img-darken");
+      })
+    })
+  </script>
+</html>
